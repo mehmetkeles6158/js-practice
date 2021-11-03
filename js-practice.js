@@ -80,12 +80,26 @@
 // factorial(5);
 
 // --- Factorial with for loop---
-function factorial(num) {
-  var product = 1;
-  for (var i = num; i > 0; i--) {
-    product *= i;
-  }
-  console.log(product);
+// function factorial(num) {
+//   var product = 1;
+//   for (var i = num; i > 0; i--) {
+//     product *= i;
+//   }
+//   console.log(product);
+// }
+
+// factorial(3);
+
+// Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array.
+
+function comSum(nums1, nums2) {
+  var combinations = [];
+  nums1.forEach(function (num1) {
+    nums2.forEach(function (num2) {
+      combinations.push(num1 + num2);
+    });
+  });
+  console.log(combinations);
 }
 
-factorial(3);
+comSum([1, 2, 3], [4, 5, 6, 7, 8]);

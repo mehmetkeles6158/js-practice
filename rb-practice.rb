@@ -2,18 +2,16 @@
 
 # def one_hundred
 #   i = 0
-
 #   while i < 100
 #     p i += 1
 #   end
 # end
-
 # p one_hundred
+
 
 # Write a method that prints out every other number from 1 to 100. (That is, 1, 3, 5, 7 … 99).
 
 #  def every_other_number
-
 #    (1..100).each do |i|
 #       p i +=2 
 #    end
@@ -35,27 +33,23 @@
 #       arr_55 << num
 #     end
 #   end
-
 #   p arr_55.count
-
 # end
-
 # method_55([10,3, 55, 20,55, 39 ,55])
+
 
 # Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
 
 # def every_string(strings)
-
 #   arr = []
-
 #   strings.each do |string|
 #     arr << string 
 #     arr << "awesomesauce" 
 #   end
 #   p arr
 # end
-
 # every_string(["a","b","c"])
+
 
 #  Start with the hash: item_amounts = {chair: 5, table: 2}
 #  Someone just bought two chairs. Change the hash such that the chair amount is 3.
@@ -68,18 +62,31 @@
 # Write a method that accepts a number and returns its factorial.
 # For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
 
-def factorial(num)
-  product = 1
-  while num > 0
-    product *= num
-    num -= 1
+# def factorial(num)
+#   product = 1
+#   while num > 0
+#     product *= num
+#     num -= 1
+#   end
+#   p product
+# end
+# factorial(3)
+
+
+# Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array.
+
+nums_1 = [1,2,3]
+nums_2 = [4,5,6,7,8]
+
+com_sum = []
+nums_1.each do |num1|
+  nums_2.each do |num2|
+    sum = num1 + num2
+    com_sum << sum
   end
-  p product
 end
 
-factorial(3)
-
-
+p com_sum
 
 
 
