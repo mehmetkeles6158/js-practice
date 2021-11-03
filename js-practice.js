@@ -67,13 +67,25 @@
 // itemAmounts["chair"] -= 2;
 // console.log(itemAmounts);
 
+// --- Factorial with while loop
+// function factorial(num) {
+//   var product = 1;
+//   while (num > 0) {
+//     product *= num;
+//     num -= 1;
+//   }
+//   console.log(product);
+// }
+
+// factorial(5);
+
+// --- Factorial with for loop---
 function factorial(num) {
   var product = 1;
-  while (num > 0) {
-    product *= num;
-    num -= 1;
+  for (var i = num; i > 0; i--) {
+    product *= i;
   }
   console.log(product);
 }
 
-factorial(5);
+factorial(3);
