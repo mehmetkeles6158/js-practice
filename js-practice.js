@@ -92,14 +92,192 @@
 
 // Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array.
 
-function comSum(nums1, nums2) {
-  var combinations = [];
-  nums1.forEach(function (num1) {
-    nums2.forEach(function (num2) {
-      combinations.push(num1 + num2);
-    });
-  });
-  console.log(combinations);
-}
+// function comSum(nums1, nums2) {
+//   var combinations = [];
+//   nums1.forEach(function (num1) {
+//     nums2.forEach(function (num2) {
+//       combinations.push(num1 + num2);
+//     });
+//   });
+//   console.log(combinations);
+// }
 
-comSum([1, 2, 3], [4, 5, 6, 7, 8]);
+// comSum([1, 2, 3], [4, 5, 6, 7, 8]);
+
+// function selectEven(strings) {
+//   var result = [];
+//   var index = 0;
+//   strings.forEach(function (string) {
+//     if (index % 2 === 0) {
+//       result.push(string);
+//     }
+//     index += 1;
+//   });
+
+//   console.log(result);
+// }
+
+// selectEven(["a", "b", "c", "d", "e", "f"]);
+
+// function max(numbers) {
+//   var currentMax = numbers[0];
+//   numbers.forEach(function (number) {
+//     if (number > currentMax) {
+//       currentMax = number;
+//     }
+//   });
+
+//   console.log(currentMax);
+// }
+
+// max([5, 4, 8, 1, 2]);
+
+// function descending(numbers) {
+//   var result = [];
+//   for (var i = numbers.length - 1; i >= 0; i--) {
+//     result.push(numbers[i]);
+//   }
+//   console.log(result);
+// }
+
+// descending([1, 3, 5, 7]);
+
+// function comSum(nums1, nums2) {
+//   var combinations = [];
+//   nums1.forEach(function (num1) {
+//     nums2.forEach(function (num2) {
+//       combinations.push(num1 + num2);
+//     });
+//   });
+//   console.log(combinations);
+// }
+// comSum([1, 2, 3], [4, 5, 6, 7, 8]);
+
+// function bubbleSort(array) {
+//   var n = array.length;
+//   var i = 0;
+//   while (i < n - 1) {
+//     var j = 0;
+//     while (j < n - i - 1) {
+//       if (array[j] > array[j + 1]) {
+//         var temp = array[j];
+//         array[j] = array[j + 1];
+//         array[j + 1] = temp;
+//       }
+//       j += 1;
+//     }
+//     i += 1;
+//   }
+//   console.log(array);
+// }
+
+// bubbleSort([13, 5, 6, 8, 19, 31, 21, 1, 0]);
+
+// function mergeSort(array, l, m, r) {
+//   var n1 = m - l + 1;
+//   var n2 = r - m;
+
+//   var L = [];
+//   var R = [];
+// var n1;
+// var n2;
+
+//   for (var i = 0; i < n1; i++) {
+//     L[i] = array[l + 1];
+//   }
+//   for (var j = 0; j < n2; j++) {
+//     R[j] = array[m + 1 + j];
+//   }
+
+//   var k = 0;
+//   var n = 0;
+
+//   var p = l;
+//   while (k < n1 && n < n2) {
+//     if (L[k] <= R[n]) {
+//       array[p] = L[k];
+//       k++;
+//     } else {
+//       array[p] = R[n];
+//       n++;
+//     }
+//     k++;
+//   }
+
+//   while (k < n1) {
+//     array[p] = L[k];
+//     k++;
+//     p++;
+//   }
+
+//   while (n < n2) {
+//     array[p] = L[n];
+//     n++;
+//     p++;
+//   }
+//   console.log(array);
+// }
+
+// mergeSort([13, 5, 6, 8, 19, 31, 21, 1, 0])
+
+//1) Write a function that takes in an array of numbers and returns its sum.
+
+// function sum(nums) {
+//   var sum = 0;
+//   nums.forEach(function (num) {
+//     sum = sum + num;
+//   });
+//   console.log(sum);
+// }
+
+// sum([1, 2, 3, 4]);
+
+// function smallestString(strings) {
+//   var smallestString = strings[0];
+//   var smallString;
+
+//   strings.forEach(function (string) {
+//     if (string.length < smallestString.length) {
+//       smallestString = string;
+//     }
+//   });
+
+//   console.log(smallestString);
+// }
+
+// smallestString(["banana", "to", "apple", "cat"]);
+
+// function reverse(nums) {
+//   var reverse = [];
+//   for (var i = nums.length - 1; i > -1; i--) {
+//     reverse.push(nums[i]);
+//   }
+//   console.log(reverse);
+// }
+
+// reverse([1, 2, 3, 4]);
+
+// 4) Write a function that takes in an array of words and returns the number of words that begin with the letter “a”.
+
+// function aWords(words) {
+//   var finalWords = [];
+
+//   words.forEach(function (word) {
+//     if (word[0] === "a") {
+//       finalWords.push(word);
+//     }
+//   });
+//   console.log(finalWords.length);
+// }
+// var arr2 = ["apple", "cat", "two", "angry"];
+// aWords(arr2);
+
+//5) Write a function that takes in an array of strings and joins them together to make a single string separated by commas.
+
+// function singleString(strings) {
+//   console.log(strings.toString);
+// }
+
+// singleString(["apple", "cat", "two", "angry"]);
+
+function countA(array) {}
