@@ -247,6 +247,7 @@
 
 // smallestString(["banana", "to", "apple", "cat"]);
 
+//  ---Reverse Function ---
 // function reverse(nums) {
 //   var reverse = [];
 //   for (var i = nums.length - 1; i > -1; i--) {
@@ -257,7 +258,7 @@
 
 // reverse([1, 2, 3, 4]);
 
-// 4) Write a function that takes in an array of words and returns the number of words that begin with the letter “a”.
+// ---4)Write a function that takes in an array of words and returns the number of words that begin with the letter “a”.---
 
 // function aWords(words) {
 //   var finalWords = [];
@@ -272,12 +273,91 @@
 // var arr2 = ["apple", "cat", "two", "angry"];
 // aWords(arr2);
 
-//5) Write a function that takes in an array of strings and joins them together to make a single string separated by commas.
+// 5) Write a function that takes in an array of strings and joins them together to make a single string separated by commas.
 
-// function singleString(strings) {
-//   console.log(strings.toString);
-// }
+//  --- toString() and split()---
 
-// singleString(["apple", "cat", "two", "angry"]);
+// var strings = ["volleyball", "basketball", "badminton", "soccer"];
+// var word = "";
 
-function countA(array) {}
+// strings.forEach(function (string) {
+//   word = word + string;
+// });
+
+// console.log(word.split(""));
+
+// --sort with ascending order--
+// var numbers = [4, 2, 5, 1, 3];
+// numbers.sort(function (a, b) {
+//   return a - b;
+// });
+// console.log(numbers);
+
+// --7) Write a function that takes in an array of numbers and returns the two smallest numbers.
+// var nums = [3, -4, 5, 0, 10];
+// var smallestNumber = nums[0];
+// var smalletstIndex = 0;
+// var i = 0;
+
+// nums.forEach(function (num) {
+//   if (num < smallestNumber) {
+//     smallestNumber = num;
+//     smalletstIndex = i;
+//   }
+//   i++;
+// });
+
+// nums.splice(smalletstIndex, 1);
+// var secondSmallest = nums[0];
+// nums.forEach(function (num) {
+//   if (num < secondSmallest) {
+//     secondSmallest = num;
+//   }
+// });
+
+// console.log(smallestNumber, secondSmallest);
+
+// Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
+
+// var nums = [0, 100, 20, 301]; //5
+
+// var strings = nums.toString();
+// var charsOfStrigs = strings.split("");
+
+// console.log(charsOfStrigs);
+// var count = 0;
+// charsOfStrigs.forEach(function (item) {
+//   if (item === "0") {
+//     count++;
+//   }
+// });
+
+// console.log(count);
+
+// 10) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
+var words = ["apple", "orange", "grapes", "applesauce"];
+var word = "";
+words.forEach((element) => {
+  word = element + word;
+});
+
+var count = 0;
+var charsOfStrigs = word.split("");
+charsOfStrigs.forEach((element) => {
+  if (element === "a") {
+    count++;
+  }
+});
+console.log(count);
+
+console.log("---");
+
+for (var i = 0; i < words.length; i++) {
+  for (var j = 0; j < words[i].length; j++) {
+    if (letter === "a") {
+      var letter = words[i][j];
+      count++;
+    }
+  }
+}
+console.log(count);

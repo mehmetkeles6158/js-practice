@@ -212,18 +212,30 @@
 
 # p smallest_string(arr1)
 
-# 3) Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
+# --3) Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
 
-# def reverse (nums)
+def reverse (nums)
 
-#   i = nums.length - 1
-#   while i > -1
-#     p nums[i]
-#   end
-#   i -= 1
-# end
+  reverse = []
+  i = nums.length - 1
+  while i > -1
+    reverse << nums[i]
+    i -= 1
+  end
+  p reverse
+end
+reverse([1,2,3])
 
-# p reverse([1,2,3])
+numbers = [1,2,3,4,5,6,7]
+reverse1 = []
+i = numbers.length - 1
+numbers.each do |num1|
+  num1 = numbers[i]
+  reverse1 << num1
+  i -= 1
+end
+
+p reverse1
 
 # def a_words(words)
    
@@ -240,18 +252,18 @@
 
 # p a_words(arr2)
 
-def single_string (strings)
+# def single_string (strings)
    
-  final = []
-  strings.each do |string|
+#   final = []
+#   strings.each do |string|
 
-    final << string.chars
-  end
+#     final << string.chars
+#   end
 
-p final
-end
+# p final
+# end
 
 
-p single_string(["apple", "cat", "two" , "angry"])
+# p single_string(["apple", "cat", "two" , "angry"])
 
 
