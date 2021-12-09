@@ -6,9 +6,24 @@
 
 var n1 = 0;
 var n2 = 1;
+var sequence = [];
 for ( var i = 2; i < 10; i++) {
   var n3 = n1 + n2;
   console.log(n3);
   n1 = n2 ;
   n2 = n3;
+
+  sequence.push(n3);
+  
 }
+
+console.log("-----------------------------");
+var sumEven = 0;
+
+for (var j = 0; j < sequence.length; j++) {
+  if (sequence[j] % 2 === 0) {
+    sumEven = sumEven + sequence[j];
+  }
+}
+
+console.log(sumEven);
