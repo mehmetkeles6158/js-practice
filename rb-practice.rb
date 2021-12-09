@@ -267,3 +267,30 @@ p reverse1
 # p single_string(["apple", "cat", "two" , "angry"])
 
 
+
+test_string = "(var x = {y: [1, 2, 3]})"
+stack = []
+open_braces = ["(", "[", "{"]
+close_braces = ["}", "]", ")"]
+matching_open_braces = { ")" => "(", "]" => "[", "}" => "{" }
+index = 0
+while index < test_string.length
+  letter = test_string[index]
+  if open_braces.include?(letter)
+    stack.push(letter)
+  end
+  if close_braces.include?(letter)
+    if matching_open_braces[letter] == stack.last
+      stack.pop
+    else
+      puts "Invalid braces"
+      return
+    end
+  end
+  index += 1
+end
+if stack.length > 0
+  puts "Invalid braces"
+else
+  puts "Valid braces"
+end

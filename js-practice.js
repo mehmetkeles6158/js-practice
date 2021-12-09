@@ -335,29 +335,33 @@
 // console.log(count);
 
 // 10) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
-var words = ["apple", "orange", "grapes", "applesauce"];
-var word = "";
-words.forEach((element) => {
-  word = element + word;
-});
+// var words = ["apple", "orange", "grapes", "applesauce"];
+// var word = "";
+// words.forEach((element) => {
+//   word = element + word;
+// });
 
-var count = 0;
-var charsOfStrigs = word.split("");
-charsOfStrigs.forEach((element) => {
-  if (element === "a") {
-    count++;
-  }
-});
-console.log(count);
+// var count = 0;
+// var charsOfStrigs = word.split("");
+// charsOfStrigs.forEach((element) => {
+//   if (element === "a") {
+//     count++;
+//   }
+// });
+// console.log(count);
 
-console.log("---");
+// console.log("-----");
 
-for (var i = 0; i < words.length; i++) {
-  for (var j = 0; j < words[i].length; j++) {
-    if (letter === "a") {
-      var letter = words[i][j];
-      count++;
-    }
-  }
-}
-console.log(count);
+// for (var i = 0; i < words.length; i++) {
+//   for (var j = 0; j < words[i].length; j++) {
+//     if (letter === "a") {
+//       var letter = words[i][j];
+//       count++;
+//     }
+//   }
+// }
+// console.log(count);
+
+(var x = { y: [1, 2, 3] });
+
+console.log(x);
