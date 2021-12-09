@@ -362,6 +362,6 @@
 // }
 // console.log(count);
 
-(var x = { y: [1, 2, 3] });
+// (var x = { y: [1, 2, 3] });
 
-console.log(x);
+// console.log(x);
